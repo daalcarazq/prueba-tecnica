@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation'
 
 function LoginPage() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const router = useRouter();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -12,10 +14,9 @@ function LoginPage() {
       const response = await fetch('http://localhost:3001/users');
       const users = await response.json();
       const authenticatedUser = users.find(user => user.username === username && user.password === password);
-      
       if (authenticatedUser) {
-        console.log('Inicio de sesión exitoso');
         setError('');
+        router.push('/homepage');
       } else {
         setError('Nombre de usuario o contraseña incorrectos');
       }
