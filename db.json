@@ -10,5 +10,50 @@
       "username": "usuario2",
       "password": "usuario2"
     }
-  ]
+  ],
+
+  "fruits": [
+    {
+      "id": 1,
+      "name": "Mango",
+      "price": 2500,
+      "amount": 50,
+      "imageUrl": "/assets/fruits/mango.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Manzana",
+      "price": 1200,
+      "amount": 40,
+      "imageUrl": "/assets/fruits/manzana.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Pera",
+      "price": 800,
+      "amount": 45,
+      "imageUrl": "/assets/fruits/pera.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Naranja",
+      "price": 600,
+      "amount": 60,
+      "imageUrl": "/assets/fruits/naranja.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Banano",
+      "price": 500,
+      "amount": 70,
+      "imageUrl": "/assets/fruits/banano.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Piña",
+      "price": 5000,
+      "amount": 20,
+      "imageUrl": "/assets/fruits/piña.jpg"
+    }
+  ] 
 }
